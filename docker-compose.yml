@@ -3,7 +3,7 @@ version: '3.8'
 services:
   postgres_db:
     image: postgres:15.3
-    platform: linux/arm64 # Optimizado para Apple Silicon/ARM
+    platform: linux/arm64
     container_name: dwh_postgres
     restart: always
     ports:
@@ -14,9 +14,7 @@ services:
       - POSTGRES_DB=${DB_NAME:-datawarehouse}
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      # Scripts de inicialización automática
       - ./scripts/init_database.sql:/docker-entrypoint-initdb.d/init_database.sql
-      # Montaje de carpetas del proyecto
       - ./scripts:/mnt/scripts
       - ./datasets:/mnt/datasets
 
