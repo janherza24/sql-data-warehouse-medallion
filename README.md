@@ -44,6 +44,7 @@ Raw Data (CSV) -> Bronze (Raw) -> Silver (Cleaned) -> Gold (Analytical)
    /source_erp
 
 /scripts
+   init_database.sql
    /bronze
       ddl_bronze.sql
       proc_load_bronze.sql -- Ingestion using COPY
@@ -64,9 +65,6 @@ Raw Data (CSV) -> Bronze (Raw) -> Silver (Cleaned) -> Gold (Analytical)
    ETL.png
    data_catalog.md
    naming_conventions.md
-
-init_database.sql
-README.md
 ```
 
 ---
