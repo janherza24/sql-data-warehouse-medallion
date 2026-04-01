@@ -1,4 +1,4 @@
-# 🏗️ Data Warehouse Project (Medallion Architecture on SQL Server)
+# 🏗️ Data Warehouse Project (Medallion Architecture on PostgreSQL)
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Data%20Warehouse-blue)
 ![Architecture](https://img.shields.io/badge/Architecture-Medallion-green)
